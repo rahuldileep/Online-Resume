@@ -1,0 +1,131 @@
+var formattedName = "Rahul Dileep Jadhav";
+var formattedRole = "Software Engineer";
+formattedName = HTMLheaderName.replace("%data%",formattedName);
+formattedRole = HTMLheaderRole.replace("%data%",formattedRole);
+$("#header").append(formattedName);
+$("#header").append(formattedRole);
+var bio = {
+	"Name" : "Rahul Dileep Jadhav\n",
+	"Role": "Software Engineer",
+	"Welcome_Message": "I am a graduate student interested in Software Engineering/Computer Networking Opportunities",
+	"Skills": [
+		"Python", "C", "C++", "Shell Scripting", "Embedded C", "Javascript", "Linux", "TCP/IP", "SIP", "HTTP", "MPLS"
+	],
+	"Picture": "/home/rahul/Desktop/frontend-nanodegree-resume-master/images/RJ.jpg",
+}
+
+var contact = {
+		"Email": "rahuldileep@gmail.com",	
+		"Mobile Num": "408-960-3629",
+		"city": "San Jose",
+}
+
+var Work_Exp = {
+	"jobs" : [
+		{
+			"name": "Calibrated Healthcare Network",
+			"Role": "BI Analyst Intern"
+			"Duration": "3 months"
+			"Location": "Los Angeles, USA"
+		},
+		{
+			"name": "Enigma Technologies",
+			"Role": "Embedded Systems Engineer"
+			"Duration": "1 Year"
+			"Location": "Pune, India"
+
+		}
+	]
+}
+
+var Education = {
+	"schools" : [
+		{
+			"name": "San Jose State University",
+			"Years" : "2015-2017",
+			"Degree" : "Masters",
+			"Major" : "Computer Networking"
+		},
+		{
+			"name": "Pune University",
+			"Years" : "2010-2014",
+			"Degree" : "Bachelors",
+			"Major" : "Electronics & Telecommunication"
+		}
+	]
+}
+
+var Projects = {
+	"Projects": [
+		{
+			"Title": "Client side application for Voice over wireless Ad-Hoc Network - (Python, PJSUA)",
+			"Description": "Developed a python PJSIP client application,to call another SIP client in an Ad-Hoc Network.
+							Used PJSUA module to develop the app"
+		},
+		{
+			"Title": "Client Server based Parking Management System - (C,Multithreading, Mutex-Locks, Concurrency, MySQL) ",
+			"Description": "Features:
+							-Online reservation of parking slots prior to arrival
+							-Time extension of already reserved slots
+							-Manual reservation of parking slots"
+		},
+		{
+			"Title": "Dashboard - (Power BI, Sharepoint)",
+			"Description": "Developed a performance dashboard on Power BI for clients to see the KPI's of their 
+							claims processing & embedded the dashboard to the company portal to enable the clients
+							access the published dashboard"
+		},
+		{
+			"Title": "Chat Application - (C, UDP Socket)",
+			"Description": "Developed a chat application using UDP sockets with multiple client chat enabled"
+		},
+		{
+			"Title": "Library Management System(Bash Shell Scripting)",
+			"Description": "Features:
+							-Add new books
+							-Search book information
+							-Edit book information
+							-Remove books
+							-View all books"
+		},
+		{
+			"Title": "Implementation of Inter-VLAN Routing with Port Security",
+			"Description": "Used Cisco IOS tool for simulation of Inter-VLAN routing.
+							Port security was achieved by limiting number of devices
+							that can access the port and learning MAC addresses dynamically"
+		},
+		{
+			"Title": "Touchscreen Operated Wireless Home Automation - (Embedded C, Atmel AVR Microcontroller, Analog Sensors, RF)",
+			"Description": "Home appliances were controlled using a touchscreen operated remote control with feedback system. 
+							RF tranceiver CC2500 was used for wireless communication"
+		}
+	]
+}
+
+if(bio.Skills.length > 0) {
+	$("#header").append(HTMLskillsStart);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[0]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[1]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[2]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[3]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[4]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[5]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[6]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[7]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[8]);
+	$("#skills").append(formattedSkill);
+	var formattedSkill = HTMLskills.replace("%data%", bio.Skills[9]);
+	$("#skills").append(formattedSkill);
+}
+for jobs in Work_Exp {
+	$("#header").append(HTMLworkStart);
+
+}
