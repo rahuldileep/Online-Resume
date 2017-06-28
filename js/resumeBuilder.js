@@ -33,14 +33,18 @@ var projects =  {
  		"dates": "Feb 2017",
  		"description": "Developed an application which enables the user to find the name and address of the restaurant. User is asked to enter the name of the food and the place. Using Google geocoding API's, the longitude and latitude of the place entered will be brought and a similar will be passed on to Foursquare location API alongside the meal type. Subsequently, the restaurant Name, Address and the accessible picture is obtained."
  	}, {
- 		"title": "Network Traffic Analyzer (Python, Google Earth, dpkt, Scapy )",
- 		"dates": "December 2016",
- 		"description": "Developed a powerful analysis tool to detect hackers location. Wrote a script, which geolocates the IP addresses recorded in a pcap network capture file. Output of the script is redirected to a text file with .kml extension which gives a visual depiction of the packet destination when opened in Google Earth. Wrote another script to detect the Nmap decoy scans which appeared to originate from various locations. This was achieved by analyzing the TTL field of the incoming packets from Nmap scans. "
- 	}, {
  		"title": "IoT Based Bus Tracking System - Python, Google API, Raspberry Pi, GPS, AWS",
  		"dates": "December 2016",
  		"description": "Wrote optimized Python code to fetch the real-time Geo Coordinates of the Bus. Used Google API's to calculate the time for the bus to reach the bus stop and display the same."
  	}, {
+ 		"title": "Network Traffic Analyzer (Python, Google Earth, dpkt, Scapy )",
+ 		"dates": "December 2016",
+ 		"description": "Developed a powerful analysis tool to detect hackers location. Wrote a script, which geolocates the IP addresses recorded in a pcap network capture file. Output of the script is redirected to a text file with .kml extension which gives a visual depiction of the packet destination when opened in Google Earth. Wrote another script to detect the Nmap decoy scans which appeared to originate from various locations. This was achieved by analyzing the TTL field of the incoming packets from Nmap scans. "
+ 	},  {
+ 		"title": "Smart Automated Restaurant - Embedded C, Touchscreen, AVR Controllers, Robots",
+ 		"dates": "Feb 2015",
+ 		"description": "Developed Software for 3 frameworks - wireless menu card, receiver system at the kitchen and food serving autonomous robots. User sitting at the table can place the order on the digital menu card and the order gets send to the kitchen using wireless transceiver CC2500 module. The receiver system displays the order at the kitchen on a LCD screen. Line tracing autonomous robots were used to serve the food at the table. "
+ 	},  {
  		"title": "Client Server based Parking Management System - (C, Multithreading, Mutex-Locks, Concurrency, MySQL)",
  		"dates": "April 2016",
  		"description": "Features involved: - Online reservation of parking slots prior to arrival - Time extension of already reserved slots - Manual reservation of parking slots"
