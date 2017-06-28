@@ -10,7 +10,7 @@ var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</sp
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
+var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" ></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
@@ -18,22 +18,28 @@ var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkDescription1 = '<br>%data%';
+var HTMLworkDescription2 = '<br>%data%';
+var HTMLworkDescription3 = '<br>%data%';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectDescription = '<br>%data%';
 
 var HTMLAchievementStart = '<div class="Achievement-entry"></div>';
 var HTMLAchievementTitle = '<a href="#">%data%</a>';
 var HTMLAchievementDates = '<div class="date-text">%data%</div>';
-var HTMLAchievementDescription = '<p><br>%data%</p>';
+var HTMLAchievementDescription = '<br>%data%';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = '<p><br>%data%</p>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolDegree = '<br>%data%';
+var HTMLschoolMajor = '<br>Major: %data%<br>';
+var HTMLschoolCourses = '<br>Courses: %data%';
+var HTMLschoolPython = '<br>%data%';
+var HTMLschoolBash = '<br>%data%';
+var HTMLschoolLinux = '<br>%data%';
 
 

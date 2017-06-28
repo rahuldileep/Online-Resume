@@ -8,7 +8,7 @@ var bio = {
 		"location": "San Jose"
 	},
 	"welcomeMessage": "Seeking full-time opportunities in Software Engineering / QA Automation Engineering",
-    "skills": ["Python", "Linux", "Shell Scripting", "Computer Networking", "C", "C++",  "Javascript", "MySQL", "Embedded C"],
+    "skills": ["Python", "Linux", "Shell Scripting", "C", "C++", "MySQL","Embedded C","Protocols - TCP, UDP, OSPF, BGP, DHCP, DNS, HTTP"],
     "biopic": "images/RJ.jpg"
 };
 
@@ -19,7 +19,10 @@ var work = {
 		"title": "Embedded Software Engineer",
 		"location": "Pune, India",
 		"dates": "May 2014 - August 2015",
-		"description": "Designed & developed software of embedded devices for customer in automation and robotics industry. Developed software for text-to-speech conversion and Smart Home systems. Successfully implemented and tested the system software."
+		"description1": "-Designed & developed software of embedded devices for customer in automation and robotics industry.",
+		"description2": "-Developed software for text-to-speech conversion and Smart Home systems.",
+		"description3": "-Successfully implemented and tested the system software."
+		
 		}]
 };
 
@@ -86,7 +89,11 @@ var education = {
 		"name": "San Jose State University",
 		"degrees": "     Master of Science",
 		"major": "Electrical Engineering | Specialization - Computer Networking | GPA: 3.4",
-		"dates": " 2015 - 2017 "
+		"dates": " 2015 - 2017 ",
+		"Courses":"Data Structures and Algorithms, Internetworking, Network Security, Network Programming and Application",
+		"Python":"Python - HackerRank Leaderboard Points - 2265 | RANK - 1",
+		"Linux":"Linux Essentials - Linux Academy",
+		"Bash":"BASH Certified Programming Course: Master the Linux Command Line - Udemy"
 	}]
 };
 
@@ -118,7 +125,11 @@ education.display = function() {
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degrees);
 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-		$(".education-entry:last").append(formattedName, formattedDates, formattedDegree, formattedMajor);
+		var formattedcourses = HTMLschoolCourses.replace("%data%", education.schools[school].Courses);
+		var formattedPython = HTMLschoolPython.replace("%data%", education.schools[school].Python);
+		var formattedBash = HTMLschoolBash.replace("%data%", education.schools[school].Bash);
+		var formattedLinux = HTMLschoolLinux.replace("%data%", education.schools[school].Linux);
+		$(".education-entry:last").append(formattedName, formattedDates, formattedDegree, formattedMajor, formattedcourses,formattedPython,formattedBash,formattedLinux);
 		}
 };
 work.display = function (){
@@ -129,8 +140,10 @@ work.display = function (){
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedEmployerTilte = formattedEmployer + formattedTitle;
 		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-		$(".work-entry:last").append(formattedEmployerTilte, formattedDates, formattedDescription );
+		var formattedDescription = HTMLworkDescription1.replace("%data%", work.jobs[job].description1);
+		var formattedDescription2 = HTMLworkDescription2.replace("%data%", work.jobs[job].description2);
+		var formattedDescription3 = HTMLworkDescription3.replace("%data%", work.jobs[job].description3);
+		$(".work-entry:last").append(formattedEmployerTilte, formattedDates, formattedDescription,formattedDescription2,formattedDescription3 );
 		
 	}
 };
