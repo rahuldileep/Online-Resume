@@ -8,7 +8,7 @@ var bio = {
 		"location": "San Jose"
 	},
 	"welcomeMessage": "Seeking full-time opportunities in Software Engineering / QA Automation Engineering",
-    "skills": ["Python", "Linux", "Shell Scripting", "C", "C++", "MySQL","Embedded C","Protocols - TCP, UDP, OSPF, BGP, DHCP, DNS, HTTP"],
+    "skills": ["Python", "Linux", "Shell Scripting", "C","Embedded C","Protocols - TCP, UDP, ARP, RIP, OSPF, DHCP, DNS, HTTP"],
     "biopic": "images/RJ.jpg"
 };
 
@@ -33,38 +33,34 @@ var projects =  {
  		"dates": "Feb 2017",
  		"description": "Developed an application which enables the user to find the name and address of the restaurant. User is asked to enter the name of the food and the place. Using Google geocoding API's, the longitude and latitude of the place entered will be brought and a similar will be passed on to Foursquare location API alongside the meal type. Subsequently, the restaurant Name, Address and the accessible picture is obtained."
  	}, {
- 		"title": "IoT Based Bus Tracking System - Python, Google API, Raspberry Pi, GPS, AWS",
- 		"dates": "December 2016",
- 		"description": "Wrote optimized Python code to fetch the real-time Geo Coordinates of the Bus. Used Google API's to calculate the time for the bus to reach the bus stop and display the same."
+ 		"title": "IP Geo-Location (Python - urllib2, JSON, Regex)",
+ 		"dates": "Feb 2017",
+ 		"description": "Application enables to geo-locate the network. The system on which the script is executed uses the urlopen module imported from urllib2 package to open a website which gives the public IP of the system. The IP address is parsed out of the raw data using regular expression module. Using the obtained IP, a request is made to a JSON api to get the location details such as city, region, country, latitude and longitude."
  	}, {
- 		"title": "Network Traffic Analyzer (Python, Google Earth, dpkt, Scapy )",
- 		"dates": "December 2016",
- 		"description": "Developed a powerful analysis tool to detect hackers location. Wrote a script, which geolocates the IP addresses recorded in a pcap network capture file. Output of the script is redirected to a text file with .kml extension which gives a visual depiction of the packet destination when opened in Google Earth. Wrote another script to detect the Nmap decoy scans which appeared to originate from various locations. This was achieved by analyzing the TTL field of the incoming packets from Nmap scans. "
- 	},  {
- 		"title": "Smart Automated Restaurant - Embedded C, Touchscreen, AVR Controllers, Robots",
- 		"dates": "Feb 2015",
- 		"description": "Developed Software for 3 frameworks - wireless menu card, receiver system at the kitchen and food serving autonomous robots. User sitting at the table can place the order on the digital menu card and the order gets send to the kitchen using wireless transceiver CC2500 module. The receiver system displays the order at the kitchen on a LCD screen. Line tracing autonomous robots were used to serve the food at the table. "
+ 		"title": "IoT Based Bus Tracking System - (Python, Google API, Raspberry Pi, GPS, AWS)",
+ 		"dates": "Jan 2017",
+ 		"description": "Wrote optimized Python code to fetch the real-time Geo Coordinates of the Bus and pushed the same to the server hosted on AWS EC2 instance. Used Google distance matrix API's to calculate the time and distance for the bus to reach the bus stop and display the same."
+ 	}, {
+ 		"title": "File Locator - Pro (Python)",
+ 		"dates": "Dec 2016",
+ 		"description": "Wrote a Python script that allows the user to locate any type of file on the system. Also, it can list all the specific type of files existing on the system. Used OS module to check, open and join the directory paths."
  	},  {
  		"title": "Client Server based Parking Management System - (C, Multithreading, Mutex-Locks, Concurrency, MySQL)",
  		"dates": "April 2016",
  		"description": "Features involved: - Online reservation of parking slots prior to arrival - Time extension of already reserved slots - Manual reservation of parking slots"
  	},  {
+ 		"title": "Smart Automated Restaurant - Embedded C, Touchscreen, AVR Controllers, Robots",
+ 		"dates": "Feb 2015",
+ 		"description": "Developed Software for 3 frameworks - wireless menu card, receiver system at the kitchen and food serving autonomous robots. User sitting at the table can place the order on the digital menu card and the order gets send to the kitchen using wireless transceiver CC2500 module. The receiver system displays the order at the kitchen on a LCD screen. Line tracing autonomous robots were used to serve the food at the table. "
+ 	},  {
  		"title": "Sign Language to Speech Conversion - Text to Speech Module,  Flex Sensors, Embedded C",
  		"dates": "August 2015",
  		"description": "Designed and developed software for a system that converts the sign language in to text and then to natural sound using multi-language voice synthesizer Emic 2 module. I was responsible for coding, sensor interfacing and user-experience shaping."
  	},  {
- 		"title": "Chat Application - (C, UDP Socket)",
- 		"dates": "March 2016",
- 		"description": "Developed a chat application using UDP sockets with multiple client chat enabled"
- 	}, {
  		"title": "Library Management System - (Bash Shell Scripting)",
  		"dates": "January 2016",
  		"description": "Features involved: - Add new books - Search book information - Edit book information - Remove books - View all books"
- 	}, {
- 		"title": "Implementation of Inter-VLAN Routing with Port Security",
- 		"dates": "September 2015",
- 		"description": "Used Cisco IOS tool for simulation of Inter-VLAN routing. Port security was achieved by limiting number of devices that can access the port and learning MAC addresses dynamically"
- 	}, {
+ 	},  {
  		"title": "Touchscreen Operated Wireless Home Automation - (Embedded C, Atmel AVR Microcontroller, Analog Sensors, RF)",
  		"dates": "March 2015",
  		"description": "Home appliances were controlled using a touchscreen operated remote control with feedback system. RF tranceiver CC2500 was used for wireless communication"
@@ -94,7 +90,7 @@ var education = {
 		"degrees": "     Master of Science",
 		"major": "Electrical Engineering | Specialization - Computer Networking | GPA: 3.4",
 		"dates": " 2015 - 2017 ",
-		"Courses":"Data Structures and Algorithms, Internetworking, Network Security, Network Programming and Application",
+		"Courses":"Data Structures and Algorithms, Internetworking, Network Programming and Application",
 		"Python":"Python - HackerRank Leaderboard Points - 2265 | RANK - 1",
 		"Linux":"Linux Essentials - Linux Academy",
 		"Bash":"BASH Certified Programming Course: Master the Linux Command Line - Udemy"
