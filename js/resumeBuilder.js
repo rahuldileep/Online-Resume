@@ -22,7 +22,6 @@ var work = {
 		"description1": "-Designed & developed software of embedded devices for customer in automation and robotics industry.",
 		"description2": "-Developed software for text-to-speech conversion and Smart Automated Restaurant.",
 		"description3": "-Successfully implemented and tested the system software."
-		
 		}]
 };
 
