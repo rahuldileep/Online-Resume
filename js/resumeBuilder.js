@@ -40,6 +40,10 @@ var projects =  {
  		"dates": "Jan 2017",
  		"description": "Wrote optimized Python code to fetch the real-time Geo Coordinates of the Bus and pushed the same to the server hosted on AWS EC2 instance. Used Google distance matrix API's to calculate the time and distance for the bus to reach the bus stop and display the same."
  	}, {
+ 		"title": "Network Traffic Analyzer (Python, Google Earth, dpkt, Scapy )",
+ 		"dates": "December 2016",
+ 		"description": "Developed a powerful analysis tool to detect hackers location. Wrote a script, which geolocates the IP addresses recorded in a pcap network capture file. Output of the script is redirected to a text file with .kml extension which gives a visual depiction of the packet destination when opened in Google Earth. Wrote another script to detect the Nmap decoy scans which appeared to originate from various locations. This was achieved by analyzing the TTL field of the incoming packets from Nmap scans. "
+ 	}, {
  		"title": "File Locator - Pro (Python)",
  		"dates": "Dec 2016",
  		"description": "Wrote a Python script that allows the user to locate any type of file on the system. Also, it can list all the specific type of files existing on the system. Used OS module to check, open and join the directory paths."
